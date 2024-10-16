@@ -4,10 +4,10 @@ class Porcentaje
 private:
     int numero;
 public:
-    Porcentaje() {
+    Porcentaje(){
         this->numero = 0;
     }
-    Porcentaje(){
+    Porcentaje(int numero){
         if(numero > 100 || numero < 0){
             throw new std::runtime_error("Numero fuera de rango.");
         }else{
@@ -18,11 +18,17 @@ public:
 
     }
     void Incrementar(int numero){
-    
 
+        this-> numero += numero;
     }
     void Disminuir(int numero){
+        this->numero-= numero;
 
     }
-    ]
+    int Imprimir()
+    {
+        return this->numero;
+    }
+    
+
 };
