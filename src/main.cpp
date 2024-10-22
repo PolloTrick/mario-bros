@@ -14,9 +14,9 @@ int main(){
     focos.emplace_back(porcentaje2);
     focos.emplace_back(porcentaje3);
 
-    for (auto &&f : focos);
+    for (auto &&f : focos)
     {
-        
+       f.Incrementar(11);
     }
     
    
