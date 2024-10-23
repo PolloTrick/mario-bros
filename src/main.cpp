@@ -1,34 +1,19 @@
-#include <Porcentaje.hpp>
-#include <iostream>
-#include <list>
+#include <SerieNavidad.hpp>
 
-int main(){
-
-    std::list<Porcentaje> focos;
-
-    Porcentaje porcentaje1;
-    Porcentaje porcentaje2;
-    Porcentaje porcentaje3;
-
-    focos.emplace_back(porcentaje1);
-    focos.emplace_back(porcentaje2);
-    focos.emplace_back(porcentaje3);
-
-    for (auto &&f : focos)
-    {
-       f.Incrementar(11);
-    }
+int main()
+{
+    SerieNavidad s1(10);
+    SerieNavidad s2(5);
+    SerieNavidad s3(15);
     
-   
+    s1.Encender();
+    s1.Imprimir();
 
-    porcentaje1.Incrementar(10);
-    porcentaje1.Incrementar(10);
-    porcentaje1.Disminuir(4);
+    s2.Encender();
+    s2.Imprimir();
 
-    std::cout
-    <<"porcentaje 1: "
-    <<porcentaje1.Imprimir()
-    <<std::endl;
+    s3.Encender();
+    s3.Imprimir();
 
-
+    return 0;
 };
